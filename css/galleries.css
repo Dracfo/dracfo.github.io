@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    height: 100vh;
+}
+
+.gallery{
+    width: 30%;
+    display: flex;
+    max-height: 90vh;
+}
+
+.gallerycol{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.gallery img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin: 5px;
+    border: 1px solid #ccc;
+}
+
+.bigphoto{
+    width: 68%;
+    height: auto;
+    max-height: 90vh;
+    object-fit: contain;
+    overflow: hidden;
+    margin: 5px;
+}
+
+#hero{
+    height: auto;
+    width: 100%;
+}
+
+.header{
+    display: flex;
+    background-color: #000000;
+    max-height: 20vh;
+    overflow: hidden;
+}
+
+svg{
+    fill: white;
+}
+
+svg path{
+    fill: white;
+}
+
+@media (max-width:800px) {
+    .gallery{
+        width: 100%;
+        flex-basis: 100%;
+    }
+    
+    .bigphoto{
+        width: 100%;
+    }
+    
+    .gallerycol{
+        flex-direction: row;
+    }
+}
