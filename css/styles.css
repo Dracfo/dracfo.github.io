@@ -7,6 +7,7 @@
     background-color: #121212;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 .wrapper{
@@ -35,7 +36,7 @@
 .header{
     display: flex;
     background-color: #000000;
-    
+    width: 100%;
 }
 
 .homebutton{
