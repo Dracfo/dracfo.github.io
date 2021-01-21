@@ -1,12 +1,12 @@
 *{
     padding: 0;
     margin: 0;
+    
 }
 
 .background{
-    background-color: #121212;
+    background-color: #282828;
     margin: 0;
-    padding: 0;
     width: 100%;
 }
 
@@ -14,7 +14,8 @@
     width: 80%;
     margin: auto;
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
+    align-content: center;
 }
 
 /*Stlying for the main container-----------------*/
@@ -22,6 +23,9 @@
     display: flex;
     align-items: space-around;
     flex-flow: wrap;
+    margin: 80px auto 0 auto;
+    max-width: 1200px;
+    position: relative;
 }
 
 .sidebar{
@@ -32,85 +36,163 @@
 
 /*Stlying for the main container-----------------*/
 
-/*Stlying for the nav bar------------------------*/
-.header{
+
+/*Stlying for the containers-----------------*/
+.container{
+    width: 100%;
     display: flex;
-    background-color: #000000;
+    max-height: 50vh;
+    margin: 7vh auto;
+}
+
+.even-container{
+    background-color: darkblue;
+    width: 100%;
+    
+}
+
+.container-body{
+    max-width: 100vw;
+    min-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+}
+
+.container-body h1{
+    position: absolute;
+    top: 30%;
+    left: 0;
+    opacity: 100%;
+    text-shadow: 1px 1px 8px black;
+    -webkit-text-stroke: 1px #282828;
+    border-bottom: 2px solid #BB86FC;
+    padding: 0 .4rem;
+    z-index: 2;
+}
+
+.container #even-h1{
+    right: 0;
+    left: auto;
+    text-align: end;
+}
+
+.container-img{
+    height: 40vh;
+    z-index: 1;
+    
+}
+
+.container-img img{
+    object-fit: contain;
+    height: 100%;
+}
+
+.container-img:hover{
+    opacity: 50%;
+    transition: opacity .5s ease;
+}
+
+.maingallery{
+    width: 800px;
+    overflow: hidden;
+    display: flex;
+}
+
+.maingallery img{
+    width: 25vh;
+}
+
+#RNTSAnalyzed{
+  position: relative; 
+  padding-bottom: 120%; 
+  height: 0; 
+  overflow: hidden;
+}
+/*Stlying for the containers-----------------*/
+
+/*Styling for About Page*/
+.about-container{
+    width: 100%;
+    max-width: 1200px;
+    justify-self: center;
+    margin-top: 3vh;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding-bottom: 25px;
+    
+}
+
+.about-container h1{
     width: 100%;
 }
 
-.homebutton{
-    width: 40vw;
+.about-container .bio{
+    width: 50%;
 }
 
-.nav{
-    display: flex;
-    width: 60vw;
-    justify-content: space-around;
-    align-self: center;
-    align-content: center;
+.experience{
+    width: 48%;
+    margin: 0 1%;
 }
 
-.nav #about-dropdown{
-    display: none;
-    position: absolute;
-    z-index: 1;
+.awards{
+    width: 48%;
+    margin: 0 1%;
 }
 
-.nav li:hover about-dropdown{
-    display: block;
-    width: auto;
-    line-height: 2;
-    padding: 10px;
-    background-color: #121212;
-    z-index: 6;
+.about-container ul{
+    list-style-type: none;
 }
 
-#about-dropdown a{
-    font-size: 3vw;
-    white-space: nowrap;
-}
-
-.nav ul{
-    list-style: none;
-    padding: 0;
-}
-
-.nav a{
+.about-container a{
     text-decoration: none;
-    font-family: sans-serif;
-    font-size: 4vw;
-    color: #6200EE;
-    transition: color .25s ease;
-    transition: font-size .25s ease;
 }
 
-.nav a:hover{
-    color: #03DAC6;
-    cursor: pointer;
+.about-container a li p:hover{
+    color: aqua;
+    transition: .25s color ease;
 }
 
-/*Stlying for the nav bar------------------------*/
+.resume{
+    right: 0;
+    bottom: 0px;
+    position: absolute;
+}
 
+.resume:hover{
+    color: red;
+    transition: .25s color ease;
+}
+
+.about-container img{
+    height: 30vh;
+    margin: 0 auto ;
+    border-radius: 10%;
+}
+/*Styling for About Page*/
 
 
 /*Stlying for the images-------------------------*/
 .pictures{
     position: relative;
-    height: 50vh;
+    height: 75vh;
     width: 50%;
     display: flex;
     flex-grow: 1;
     overflow: hidden;
+    z-index: 1;
 }
 
-.pictures h1{
+.pictures h2{
     position: absolute;
     color:#03DAC6;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    text-shadow: -2px -2px #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    text-shadow: -1px -1px #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     z-index: 5;
     pointer-events: none;
     text-align: center;
@@ -130,9 +212,11 @@
 .footer{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    margin: 1% 0 0 0;
 }
 
-svg{
+.footer svg{
     width: 30px;
     padding: 0 50px;
     fill: #FFFFFF;
@@ -140,12 +224,133 @@ svg{
     transition: opacity .5s ease;
 }
 
-svg:hover{
+.footer svg:hover{
     fill: #FFFFFF;
     opacity: 87%;
 }
 
-path{
+.footer path{
   transition: fill 5s ease;  
 }
+
+.footer .cc{
+    font-size: 0.5rem;
+    color: white;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 1% 0 0 0;
+    
+}
+
+.footer p{
+    opacity: 38%;
+    font-size: 0.5rem;
+    margin: 0 0.5%;
+}
+
+.footer .cc a{
+    color: white;
+    opacity: 38%;
+}
 /*Stlying for the footer-------------------------*/
+
+/*Media Query Resizing-------------------------*/
+@media (max-width: 1000px){
+    .background{
+        height: 100%;
+    }    
+
+    .wrapper{
+        padding: 1vh 0 0 0;
+    }
+    
+    .container{
+        width: 75vw;
+    }
+    
+    .container-body{
+        display: block;
+        width: inherit;
+        min-width: 100px;
+        max-height: 50vh;
+    }
+    
+    .container-body h1{
+        position: static;
+        text-align: center;
+        width: inherit;
+        width: 75vw;
+    }
+    
+    .container #even-h1{
+        text-align: center;
+    }
+    
+    .container-body a{
+        text-decoration: none;
+    }
+    
+    .container-img{
+        width: 75vw;
+        height: 25vh;
+        margin: 1vh 0 0 0;
+    }
+    
+    .container-img img{
+        width: 100%;
+    }
+    
+    .maingallery{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: auto;
+        width: 75vw;
+        align-content: space-around;
+        justify-content: space-around;
+        max-height: 50vh;
+    }
+    
+    .maingallery .container-img{
+        height: 25vw;
+        width: 25vw;
+    }
+    
+    .maingallery img{
+        width: auto;
+    }
+    
+}
+
+@media (max-width: 800px){
+    .maingallery .container-img{
+        height: 30vw;
+        width: 30vw;
+    }
+    
+    .about-container{
+        display: block;
+    }
+    
+    .about-container .bio{
+        width: 100%;
+    }
+    
+    .about-container img{
+        margin: 3% 25%;
+    }
+    
+    .experience{
+        width: 100%;
+        margin: 2vh 0 0 0;
+    }
+    
+    .awards{
+        width: 100%;
+        margin: 2vh 0 0 0;
+    }
+}
+/*Media Query Resizing-------------------------*/
