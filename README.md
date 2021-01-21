@@ -6,7 +6,7 @@ It was actively worked on from May to August 2020.
 
 Visit the live website: [dracfo.github.io](dracfo.github.io)
 
-![Home Page Screenshot](/Images/Aidan's_Webpage Homepage_Full_Length.PNG)
+![Home Page Screenshot](/Images/Aidan's_Webpage Homepage_Full_Length.png)
 
 
 
