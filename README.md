@@ -1,11 +1,12 @@
-# Basic Personal Portfolio Website - My first attempt at coding a website from scratch
+# Basic Personal Portfolio Website
+### Aidan's first attempt at coding a website from scratch
 This portfolio website was created as the final project for the Web: Dynamic Site Design Course at Humber College, Toronto, ON, Canada.
 
 It was actively worked on from May to August 2020.
 
-Visit the live website: dracfo.github.io
+Visit the live website: [dracfo.github.io](dracfo.github.io)
 
-![Home Page Screenshot](/Images/Aidan's Webpage Homepage Full Length.png)
+![Home Page Screenshot](Images/Aidan's Webpage Homepage Full Length.png)
 
 
 
